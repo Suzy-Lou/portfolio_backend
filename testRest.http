@@ -32,9 +32,15 @@ POST http://localhost:3000/newProject
 Content-Type: application/json
 
 {
-    "titre":"mon premier projet",
-    "contenuBref": "voila le contenu bref",
-    "contenu": "lreiuhntfgrzreglhlhlhuea iutgggvbatlctav yvapbeilytbav",
-    "listeMots": "aaaa"
+    "titre":"mon 7e projects",
+    "contenuBref": "voila le contenu bref du 7e",
+    "contenu": "lreiuhntfgrzreglggggghlhlhuet75tta iu6tgggvbatlctav yvapbeilytbav",
+    "listeMots": "aa5ggtt6gg7aa"
 }
+
+###
+
+GET http://localhost:3000/projects/661e7d20df339e321ccf7f72
+Content-Type: application/json
+
 

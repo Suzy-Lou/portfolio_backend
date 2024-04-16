@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const projetSchema = new mongoose.Schema({
+const projectsSchema = new mongoose.Schema({
     titre: {type:String,required:true},
     contenuBref: {type:String,required:true,unique:true},
     contenu: {type:String,required:true,unique:true},
@@ -8,5 +8,5 @@ const projetSchema = new mongoose.Schema({
 
 }); 
 
-const projet = mongoose.model('projet', projetSchema);
-module.exports = projet;
+const projects = mongoose.model('projects', projectsSchema);
+module.exports = projects;
