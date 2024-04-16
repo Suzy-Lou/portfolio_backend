@@ -1,0 +1,40 @@
+GET http://localhost:3000/users/1234
+
+
+###
+
+POST http://localhost:3000/nouvelUtilisateur
+Content-Type: application/json
+
+{
+    "nom":"utilisateur",
+    "email": "user@example.com",
+    "password": "password"
+}
+
+
+###
+
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "user@example.com",
+    "password": "password"
+}
+
+
+###
+
+
+POST http://localhost:3000/newProject
+Content-Type: application/json
+
+{
+    "titre":"mon premier projet",
+    "contenuBref": "voila le contenu bref",
+    "contenu": "lreiuhntfgrzreglhlhlhuea iutgggvbatlctav yvapbeilytbav",
+    "listeMots": "aaaa"
+}
+
