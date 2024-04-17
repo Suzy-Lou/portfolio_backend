@@ -26,3 +26,18 @@ exports.getAllProjects = async function() {
     const projects = await userModel.find();
     return projects;
 }
+
+exports.getProjectByTitle = async function(titre) {
+    const project = await userModel.findOne({ titre: titre });
+    return project;
+}
+
+exports.getProjectByContent = async function(contenu) {
+    const project = await userModel.findOne({ contenu: contenu });
+    return project;
+}
+
+exports.getProjectByBriefContent = async function(contenuBref) {
+    const project = await userModel.findOne({ contenuBref: contenuBref });
+    return project;
+}

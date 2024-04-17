@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const service = require("../services/serviceProjects.js");
-const { v4: uuidv4 } = require('uuid');
 
 
 router.post('/newProject', async function (req, res) {
@@ -9,7 +8,24 @@ router.post('/newProject', async function (req, res) {
     const contenuBref = req.body.contenuBref;
     const contenu = req.body.contenu;
     const listeMots = req.body.listeMots;
-    const id = uuidv4();
+
+    // const sameTitle = await service.getProjectByTitle(titre);
+    // if (sameTitle) {
+    //     res.status(400).send('A project with this title already exists');
+    //     return;
+    // }
+
+    // const sameContentBref = await service.getProjectByBriefContent(contenuBref);
+    // if (sameContentBref) {
+    //     res.status(400).send('A project with this brief content already exists');
+    //     return;
+    // }
+
+    // const sameContent = await service.getProjectByContent(contenu);
+    // if (sameContent) {
+    //     res.status(400).send('A project with this  content already exists');
+    //     return;
+    // }
 
 
     //service.createProjects(id,titre, contenuBref, contenu, listeMots);
