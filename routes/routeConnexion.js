@@ -20,6 +20,11 @@ router.post('/login', async function (req, res) {
     res.json({
         accessToken,
     });
+
+    console.log("get login request from front");
+    res.status(201).send();
+
+
 });
 
 

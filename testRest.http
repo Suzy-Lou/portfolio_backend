@@ -1,9 +1,10 @@
-GET http://localhost:3000/users/1234
+GET http://localhost:3001/users/1234
 
 
 ###
+# modifier la requete avec le numéro du port que vous utilisez
 
-POST http://localhost:3000/nouvelUtilisateur
+POST http://localhost:3001/nouvelUtilisateur
 Content-Type: application/json
 
 {
@@ -15,32 +16,12 @@ Content-Type: application/json
 
 ###
 
+# modifier la requete avec le numéro du port que vous utilisez
 
-POST http://localhost:3000/login
+POST http://localhost:3001/login
 Content-Type: application/json
 
 {
     "email": "user@example.com",
     "password": "password"
 }
-
-
-###
-
-
-POST http://localhost:3000/newProject
-Content-Type: application/json
-
-{
-    "titre":"mon 7e projects",
-    "contenuBref": "voila le contenu bref du 7e",
-    "contenu": "lreiuhntfgrzreglggggghlhlhuet75tta iu6tgggvbatlctav yvapbeilytbav",
-    "listeMots": "aa5ggtt6gg7aa"
-}
-
-###
-
-GET http://localhost:3000/projects/661e7d20df339e321ccf7f72
-Content-Type: application/json
-
-
