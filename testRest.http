@@ -1,0 +1,27 @@
+GET http://localhost:3001/users/1234
+
+
+###
+# modifier la requete avec le numéro du port que vous utilisez
+
+POST http://localhost:3001/nouvelUtilisateur
+Content-Type: application/json
+
+{
+    "nom":"utilisateur",
+    "email": "user@example.com",
+    "password": "password"
+}
+
+
+###
+
+# modifier la requete avec le numéro du port que vous utilisez
+
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email": "user@example.com",
+    "password": "password"
+}
